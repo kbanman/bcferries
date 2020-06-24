@@ -1,0 +1,36 @@
+{
+  "name": "bcferries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "npm run clean && tsc && cp -r node_modules build/",
+    "deploy": "cd cdk; cdk deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbanman/bcferries.git"
+  },
+  "author": "Kelly Banman <kelly.banman@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kbanman/bcferries/issues"
+  },
+  "homepage": "https://github.com/kbanman/bcferries#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.56",
+    "@types/cheerio": "^0.22.18",
+    "@types/node": "^14.0.13",
+    "@types/tough-cookie": "^4.0.0",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.703.0",
+    "axios": "^0.19.2",
+    "axios-cookiejar-support": "^1.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "moment": "^2.27.0",
+    "tough-cookie": "^4.0.0"
+  }
+}
